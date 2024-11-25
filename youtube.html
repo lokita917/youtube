@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Canal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+    
+            <button class="my-creators-btn">
+                My Creators
+            </button>
+
+          
+            <h2>My Library</h2>
+            <ul class="library-list">
+                <li>Tracks</li>
+                <li>Albums</li>
+                <li>Playlists</li>
+                <li>Podcasts</li>
+                <li>Radio Stations</li>
+                <li>Creators</li>
+            </ul>
+
+            
+            <h2>My Playlist</h2>
+            <ul class="playlist-list">
+                
+            </ul>
+            <button class="create-playlist-btn">+ Create Playlist</button>
+        </aside>
+
+      
+        <main class="main-content">
+          
+            <header class="top-bar">
+                <h1>Mi Canal</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar videos..." class="search-bar">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </header>
+
+           
+            <section class="profile-section">
+                <img src="./db58cf607e84dad0648e0ae8c1fc27ba.jpg" alt="Foto de perfil" class="profile-picture small-profile">
+                <div class="profile-info">
+                    <h2>DC Roseanne Park</h2>
+                    <p>Auckland, Nueva Zelanda</p>
+                    <p>K-pop, Dance pop, Hip hop</p>
+                </div>
+            </section>
+
+        
+            <section class="publications-section">
+                <h2>Publicaciones</h2>
+                <div class="publications-grid">
+             
+                    <div class="card">
+                        <video controls width="100%">
+                            <source src="./ROSÉ - number one girl (official music video)(480P).mp4" type="video/mp4">
+                        </video>
+                        <h3>Rose - Number One Girl (Official Music Video)</h3>
+                        <button class="play-video" data-video-src="./ROSÉ - number one girl (official music video)(480P).mp4">Play</button>
+                    </div>
+               
+                    <div class="card">
+                        <video controls width="100%">
+                            <source src="./ROSÉ _ Bruno Mars - APT. (Official Music Video)(720P_HD).mp4" type="video/mp4">
+                        </video>
+                        <h3>Rose & Bruno Mars-APT.(Official Music Video)</h3>
+                        <button class="play-video" data-video-src="./ROSÉ _ Bruno Mars - APT. (Official Music Video)(720P_HD).mp4">Play</button>
+                    </div>
+   
+                    <div class="card">
+                        <video controls width="100%">
+                            <source src="./ROSÉ - _Gone_ M_V(720P_HD).mp4" type="video/mp4">
+                        </video>
+                        <h3>Rose - 'Gone' - M/V</h3>
+                        <button class="play-video" data-video-src="./ROSÉ - _Gone_ M_V(720P_HD).mp4">Play</button>
+                    </div>
+                   
+
+                    <div class="card">
+                        <video controls width="100%">
+                            <source src="./ROSÉ - _On The Ground_ M_V(720P_HD).mp4" type="video/mp4">
+                        </video>
+                        <h3>Rose - 'On The Ground' M/V</h3>
+                        <button class="play-video" data-video-src="./ROSÉ - _On The Ground_ M_V(720P_HD).mp4">Play</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="video-player-section">
+                <h3>Reproductor de Video</h3>
+                <video id="video-player" controls width="100%">
+                    <source id="video-source" src="" type="video/mp4">
+                </video>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
